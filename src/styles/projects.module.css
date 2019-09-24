@@ -1,0 +1,66 @@
+.ProjectNew{
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.imgProjectWrapper{
+    width:900px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.imgProjectWrapper img{
+    width:800px;
+    height: 400px;
+
+}
+
+.linkToProjects{
+    width:100%;
+    padding: 40px;
+    margin-top:30px;
+    text-align: -webkit-center;
+  
+}
+
+.butonGithub{
+    background-color: #02203a;
+    color: #f06461;
+    padding: 20px;
+    font-size:20px;
+    text-align: center;
+    width:400px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px){
+    
+    .butonGithub{
+        padding: 10px;
+        font-size:15px;
+        width:200px;
+
+    }
+
+    .linkToProjects{
+        width:100%;
+        padding: 40px;
+        margin-top:30px;
+        text-align: -webkit-center;
+      
+    }
+
+    .imgProjectWrapper img{
+            display: none;
+    
+    }
+
+}
+
+
+

@@ -1,0 +1,46 @@
+.wrapperFourth{
+    width:100%;
+    height:auto;
+    background-color: #e3e7ec;
+}
+
+.projects{
+    font-size: 28px;
+    /* color: #08062B; */
+    text-align: center;
+    height: auto;
+    padding-top: 30px;
+}
+
+.projects h1{
+    font-weight: 400;
+}
+
+
+.project-warpper{
+    display: flex;
+    width: 300px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.each-project {
+    background-color: #bfd0da;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.each-project i {
+    margin-top: 9px;
+    font-size: 33px;
+}
+
+.style-icons{
+    color: #6b454c;
+    font-size: 2.5em;
+}

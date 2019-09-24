@@ -1,0 +1,61 @@
+.form-container{
+  padding: 30px;
+  background-color: #42314c;
+}
+
+.btn-primary {
+  background-color: #ad1662;
+  border-color: #ad1562;
+}
+
+.btn-primary:hover {
+  border-color: #1d002e;
+  background-color:#1d002e;
+  color:#ad1662
+
+}
+
+.form-group {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 500px;
+  background-color: transparent;
+  border: 1px solid #ad1662;
+}
+
+.btn {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+
+
+.align-item{
+  text-align: center;
+}
+
+.place::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c4bebe47;
+  opacity: 1; /* Firefox */
+}
+
+.place::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #c4bebe47;
+}
+
+.place::-ms-input-placeholder { /* Microsoft Edge */
+  color: #c4bebe47;
+}
+
+
+.labels{
+  font-size: 1.5em;
+  color:white
+}
+
+

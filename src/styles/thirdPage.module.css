@@ -1,0 +1,204 @@
+.wrapperThird{
+    background:#053e3f;
+    width:100%;
+    height:auto;
+    padding-bottom: 130px;
+}
+
+.experience{
+    font-size: 28px;
+    color:#c0c4aa;
+    text-align: center;
+    height: auto;
+    padding-top: 30px;
+}
+
+.experience h1{
+    font-weight: 400;
+}
+
+
+#small{
+    font-size: 8px !important;
+    color: white;
+    text-align: center;
+    height: auto;
+    padding-bottom: 40px;
+    margin-top: 10px;
+}
+
+#small{
+    font-size: 10px !important;
+    color: white;
+    text-align: center;
+    height: auto;
+    padding-bottom: 40px;
+    margin-top: 10px;
+}
+
+#small h1{
+    font-size: 18px !important;
+}
+.experiencetable {
+    width: 900px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #bfd0da;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    box-shadow: inset 0 0 21px #000000;
+}
+
+.life {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.lifeP{
+    width: 200px;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 40px;
+    text-align: center;
+    white-space: pre-line;
+    overflow-x: scroll;
+    font-size: 15px;
+    color:#c0c4aa;
+    padding: 5px;
+}
+
+.life:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: #053e3f;
+}
+
+.lifeP p{
+    font-size: 20px;
+    color:white
+}
+
+
+
+
+.life div{
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+}
+
+.linktoproject{
+    width:200px;
+    height:auto;
+    text-align: -webkit-right;
+    margin-right: 30px;
+    float: right;
+}
+
+.viewing{
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #232729;
+    color: #bfd0da;
+    margin-top: 30px;
+    box-shadow: 2px 4px 0px #000000f0;
+    margin-right: 40px;
+}
+
+.viewing:hover{
+    background-color: #bfd0da;
+    color: #000000;
+}
+
+.viewingLink{
+    text-decoration: none;
+
+}
+
+.viewingLink:hover{
+    text-decoration: none;
+}
+
+
+.lifeParagraph{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+@media only screen and (max-width: 910px){
+
+    .experiencetable {
+        width: 600px;
+    }
+
+}
+
+@media only screen and (max-width: 610px){
+
+
+    .experience{
+        font-size: 18px;
+    }
+    
+    .experience h1{
+        font-weight: 400;
+    }
+    
+    
+    #experiencesmall{
+        font-size: 6px !important;
+    }
+    .experiencetable {
+        width: 240px;
+        height: 250px;
+    }
+    
+    .viewing{
+        font-size: 15px;
+        width: 150px;
+    }
+    }
+
+
+    @media (orientation: landscape) and (max-width: 850px) {
+        .experience{
+            font-size: 18px;
+        }
+        
+        .experience h1{
+            font-weight: 400;
+        }
+        
+        
+        #experiencesmall{
+            font-size: 6px !important;
+        }
+        .experiencetable {
+            width: 240px;
+            height: 250px;
+        }
+        
+        .viewing{
+            font-size: 15px;
+            width: 150px;
+        }
+    }
+
+
