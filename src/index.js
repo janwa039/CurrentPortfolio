@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Projects from './components/Projects'
-import Contact from './components/SecondPage'
-import Ripple from './oldsites/javascript/ripple'
+import Resume from './comnponents/resume'
+import Project from './comnponents/project'
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -13,9 +12,8 @@ ReactDOM.render(
   <Router >
     <div>
       <Route exact path="/" component={App}/>
-      <Route path path="/projects" component={Projects}/>
-      <Route path path="/contact" component={Contact}/>
-      <Route path path="/oldsite" component={Ripple}/>
+      <Route path path="/resume" component={Resume}/>
+      <Route path path="/project" component={Project}/>
     </div>
   </Router>, document.getElementById('root')
 );
