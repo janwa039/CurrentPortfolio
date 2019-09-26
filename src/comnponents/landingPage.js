@@ -83,10 +83,10 @@ function LandingPage() {
                     <div className={styles.pages}><div className={styles.animatedPage}><Link className={styles.link} to='/resume'>RESUME</Link></div></div>
                     <div className={styles.animatedPage}></div>
                 </div>
-                <div className={styles.Information}>
+                {/* <div className={styles.Information}>
                     <div className={styles.pages}><div className={styles.animatedPage}><Link className={styles.link} to='/contact'>CONTACT</Link></div></div>
                     <div className={styles.animatedPage}></div>
-                </div>
+                </div> */}
             </div>
         </section>
         <section>

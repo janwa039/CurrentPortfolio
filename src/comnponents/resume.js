@@ -30,7 +30,7 @@ function Resume() {
                       <div className={styles.technologies}>Technologies</div>
                       <div className={styles.listofTechnologies}>
                         <ul>
-                            <li>AVASCRIPT(ECMA 6)</li>
+                            <li>JAVASCRIPT(ECMA 6)</li>
                             <li>HTML</li>
                             <li>REACT.JS</li>
                             <li>CSS</li>
