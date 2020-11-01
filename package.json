@@ -4,7 +4,7 @@
   "description": "my personal portfolio",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass HTML/scss/style.scss HTML/css/style.css -w echo \"DONE\"",
+    "watch:sass": "node-sass scss/style.scss cssCopy/style.css -w echo \"DONE\"",
     "devserver":"live-server",
     "start":"npm-run-all --parallel devserver watch:sass"
   },
