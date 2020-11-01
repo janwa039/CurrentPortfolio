@@ -1,0 +1,77 @@
+//
+// about.scss
+//
+.about-background {
+    // background-color: $white;
+    background: $gray-800
+}
+.about-hero {
+    position: relative;
+    border: 16px solid $dark-black;
+
+    & img {
+        position: absolute;
+        width: 100%;
+    }
+
+}
+
+.text {
+
+    &-about{
+        color: $white;
+        font-weight: 200;
+    }
+}
+
+
+.about-button {
+    background-color: transparent ;
+    border: 1px solid $white ;
+    color: $primary ;
+
+    &:hover, &:focus, &:active, &.active, &.focus{
+        background-color: transparent ;
+        border-color: $primary ;
+        color: $white ;
+    }
+}
+
+//Interests
+.interests-desc {
+    transition: all 0.2s ease;
+    background-color: $dark-black;
+    .hobbies {
+        &:before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            left: 55px;
+            background: $gray-200;
+            z-index: 1;
+        }
+    }
+    .icon {
+        color: $white;
+        width: 40px;
+        transition: all 0.2s ease;
+    }
+    .title {
+        font-weight: 500;
+        color: $gray-600;
+    }
+    &:hover {
+        background: $white !important;
+        box-shadow: $shadow-lg;
+        transform: translateY(-5px);
+        .icon {
+            color: $dark;
+        }
+
+        .title {
+            color: $body;
+        }
+    }
+}

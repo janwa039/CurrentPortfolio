@@ -1,0 +1,97 @@
+//
+// contact.scss
+//
+
+.custom-span-contact {
+    font-weight: 600;
+    padding-left: 50px;
+    line-height: 21px;
+    padding-top: 5px;
+    color: $white;
+
+    & i {
+        left: 0;
+        top: 10px;
+        font-size: 33px;
+        color: $primary;
+
+        & .fa-envelope {
+            font-size: 42px;
+            top: 7px;
+        }
+    
+        & .fa-map-marker {
+            font-size: 42px;
+            top: 7px;
+        }
+    
+
+        & .fa-phone-square {
+            font-size: 42px;
+            top: 7px;
+        }
+    }
+
+}
+
+
+.form-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    .form-control {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        line-height: 26px;
+        color: $body-color;
+        background: $gray-800;
+        border-radius: 30px !important;// remove this after you remove all the important values elsewhere
+        transition: all 0.2s ease;
+        border-color: $gray-800 !important; // remove this after you remove all the important values elsewhere
+        text-transform: uppercase;
+    }
+    textarea {
+        height: 180px !important;
+        border-radius: 30px !important;
+    }
+}
+
+.error {
+    margin: 8px 0px;
+    display: none;
+    color: $danger;
+}
+  
+#ajaxsuccess {
+    font-size: 16px;
+    width: 100%;
+    display: none;
+    clear: both;
+    margin: 8px 0px;
+}
+
+.error_message {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid $danger;
+    color: $danger;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-loader {
+    display: none;
+}
+  
+#success_page {
+    text-align: center;
+    margin-bottom: 50px;
+    h3 {
+        color: $success;
+    }
+}
