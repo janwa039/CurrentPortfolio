@@ -679,26 +679,26 @@
                         </p>
                     </div>
                     <div class="col-lg-8">
-                        <form action="php/contact.php" name="contact-form" id="contact-form">
+                        <form action="/formPage" name="contact-form" method="post" id="contact-form">
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="form-group">
-                                            <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name ">
+                                            <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name " required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="form-group">
-                                            <input name="email" id="email" type="email" class="form-control border rounded" placeholder="Your email ">
+                                            <input name="email" id="email" type="email" class="form-control border rounded" placeholder="Your email " required>
                                     </div>  
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="form-group">
-                                        <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject ">
+                                        <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject " required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message "></textarea>
+                                        <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message " required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-left mb-3">
