@@ -2,12 +2,11 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "my personal portfolio",
-  "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass scss/style.scss cssCopy/style.css -w echo \"DONE\"",
+    "watch:sass": "node-sass public/scss/style.scss public/cssCopy/style.css -w echo \"DONE\"",
     "devserver": "live-server",
     "startCustom": "npm-run-all --parallel devserver watch:sass",
-    "start": "serve"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
