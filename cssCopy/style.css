@@ -1036,7 +1036,8 @@ p {
 
 @media (max-width: 991px) {
   .navbar-custom {
-    padding: 10px 0px !important; }
+    padding: 10px 0px !important;
+    background-color: #141414; }
     .navbar-custom .navbar-nav .nav-item .nav-link {
       color: #ffffff !important; }
     .navbar-custom .navbar-nav .nav-item .dropdown-toggle:after {
@@ -1595,7 +1596,7 @@ p {
     height: 40px;
     font-size: 14px;
     line-height: 26px;
-    color: #161c2d;
+    color: #ffffff;
     background: #252525;
     border-radius: 30px !important;
     transition: all 0.2s ease;
