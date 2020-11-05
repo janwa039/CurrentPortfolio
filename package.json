@@ -7,7 +7,7 @@
     "watch:sass": "node-sass scss/style.scss cssCopy/style.css -w echo \"DONE\"",
     "devserver": "live-server",
     "startCustom": "npm-run-all --parallel devserver watch:sass",
-    "start": "node email.js"
+    "start": "serve"
   },
   "repository": {
     "type": "git",
