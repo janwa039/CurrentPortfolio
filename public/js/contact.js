@@ -2,6 +2,8 @@
     $('#contact-form').submit(function() {
         var action = $(this).attr('action');
 
+        console.log('##########action', action)
+
         $("#message").slideUp(750, function() {
             $('#message').hide();
 
@@ -9,12 +11,17 @@
                 .before('')
                 .attr('disabled', 'disabled');
 
+                console.log('##########name', $('#name').val())
+                console.log('##########email', $('#email').val())
+                console.log('##########comment', $('#comments').val())
+
             $.post(action, {
                     name: $('#name').val(),
                     email: $('#email').val(),
                     comments: $('#comments').val(),
                 },
                 function(data) {
+                  console.log('##############data', data)
                     document.getElementById('message').innerHTML = data;
                     $('#message').slideDown('slow');
                     $('#cform img.contact-loader').fadeOut('slow', function() {
@@ -30,6 +37,10 @@
         return false;
 
     });
+
+    // $('#contact-form').submit(function(){
+    //   var action = $(this).attr('action');
+    // })
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {

@@ -679,11 +679,13 @@
                         </p>
                     </div>
                     <div class="col-lg-8">
-                        <form action="/formPage" name="contact-form" method="post" id="contact-form">
+                        <div id="message"></div>
+                        <form action="/email" name="contact-form" method="post" id="contact-form" >
+                            <!-- onsubmit="return submitEmailForm(this);" -->
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="form-group">
-                                            <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name " required>
+                                            <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name " >
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
@@ -693,12 +695,12 @@
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="form-group">
-                                        <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject " required>
+                                        <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject " >
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message " required></textarea>
+                                        <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message " ></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-left mb-3">
@@ -739,7 +741,7 @@
         <script src="js/portfolio-filter.js"></script> 
         <script src="js/magnific.init.js"></script> 
         <!-- Contact -->
-        <script src="js/contact.js"></script>
+        <!-- <script src="js/contact.js"></script> -->
         <!-- Tweenmax Js -->
         <script src="js/jquery-twennmax.js"></script>
         <script src="js/TweenMax.min.js"></script>
@@ -750,6 +752,27 @@
         <script src="js/switcher.js"></script>
         <!-- Main Js -->
         <script src="js/app.js"></script>
+        <!-- <script type="text/javascript">
+            function submitEmailForm(form) {
+                cosnole.log('###################It came here', form)
+                var obj = new XMLHttpRequest();
+                obj.onreadystatechange = function(){
+                    if(obj.readyState == 4){
+                        if(obj.status == 200){
+                            var res = JSON.parse(obj.responseText);
+                            alert(res.message);
+                        }
+                        else{
+                            alert("XMLHttp status " + obj.status + ": " + obj.statusText);
+                        }
+                    }
+                };
+                obj.open("post", form.action, true);
+                obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+                obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+                return false;
+            }
+    </script> -->
     </body>
 
 </html>
