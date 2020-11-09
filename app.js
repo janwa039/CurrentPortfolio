@@ -32,18 +32,12 @@ app.use(express.static('public'))
 // HTTP POST
 app.post("/email", function(request, response) {
     // create reusable transporter object using the default SMTP transport
-
-    const user = process.env.USER
-    const pass = process.env.PASS
       const transporter = nodemailer.createTransport({
           // https://www.google.com/settings/security/lesssecureapps to allow the app
-        //   host: "smtp.gmail.com",
-        //   port: 465,
-        //   secure: true,
-          service: 'Gmail',
+          service: 'gmail',
           auth: {
-              user, // this should be YOUR GMAIL account
-              pass // this should be your password
+              user:process.env.USER, // this should be YOUR GMAIL account
+              pass:process.env.PASS // this should be your password
           }
       });
   
@@ -51,7 +45,7 @@ app.post("/email", function(request, response) {
       var htmlBody = `<h2>Mail From Contact Form</h2><p>from: ${request.body.name} <a href="mailto:${request.body.email}">${request.body.email}</a></p><p>${request.body.comments}</p>`;
       var mail = {
           from: request.body.email, // sender address
-          to: user, // list of receivers (THIS COULD BE A DIFFERENT ADDRESS or ADDRESSES SEPARATED BY COMMAS)
+          to: process.env.USER, // list of receivers (THIS COULD BE A DIFFERENT ADDRESS or ADDRESSES SEPARATED BY COMMAS)
           subject: "Mail From Contact Form", // Subject line
           text: textBody,
           html: htmlBody
