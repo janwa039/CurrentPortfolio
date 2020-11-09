@@ -37,9 +37,10 @@ app.post("/email", function(request, response) {
     const pass = process.env.PASS
       const transporter = nodemailer.createTransport({
           // https://www.google.com/settings/security/lesssecureapps to allow the app
-          host: "smtp.gmail.com",
-          port: 465,
-          secure: true,
+        //   host: "smtp.gmail.com",
+        //   port: 465,
+        //   secure: true,
+          service: 'Gmail',
           auth: {
               user, // this should be YOUR GMAIL account
               pass // this should be your password
