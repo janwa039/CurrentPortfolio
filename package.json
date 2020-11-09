@@ -6,7 +6,8 @@
     "watch:sass": "node-sass public/scss/style.scss public/cssCopy/style.css -w echo \"DONE\"",
     "devserver": "live-server",
     "startCustom": "npm-run-all --parallel devserver watch:sass",
-    "start": "serve"
+    "runNode": "node app.js",
+    "start": "npm-run-all --parallel runNode watch:sass"
   },
   "repository": {
     "type": "git",
