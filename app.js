@@ -33,8 +33,8 @@ app.use(express.static('public'))
 app.post("/email", function(request, response) {
     // create reusable transporter object using the default SMTP transport
 
-    const user = process.env.GMAIL_USER
-    const pass = process.env.GMAIL_PASS
+    // const user = process.env.USER
+    // const pass = process.env.PASS
       const transporter = nodemailer.createTransport({
           // https://www.google.com/settings/security/lesssecureapps to allow the app
           host: "smtp.gmail.com",
